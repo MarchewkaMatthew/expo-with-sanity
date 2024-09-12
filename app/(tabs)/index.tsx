@@ -2,7 +2,7 @@ import { Pressable, StyleSheet } from "react-native";
 
 import { Text, View } from "@/components/Themed";
 
-async function fetchHello() {
+async function fetchPosts() {
   const response = await fetch("/api/posts");
   const data = await response.json();
   alert(JSON.stringify(data));
@@ -21,7 +21,7 @@ export default function TabOneScreen() {
         lightColor="#eee"
         darkColor="rgba(255,255,255,0.1)"
       />
-      <Pressable onPress={() => fetchHello()}>
+      <Pressable onPress={() => fetchPosts()}>
         <Text>Test API</Text>
       </Pressable>
     </View>
