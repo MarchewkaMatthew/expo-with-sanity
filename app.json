@@ -13,7 +13,8 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.marchewkamatthew.expowithsanity"
     },
     "android": {
       "adaptiveIcon": {
@@ -36,6 +37,14 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": "https://example.com/"
+      },
+      "eas": {
+        "projectId": "44a7314c-636a-4351-93ee-6ac7ce8be768"
+      }
     }
   }
 }

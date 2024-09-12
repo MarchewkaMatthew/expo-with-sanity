@@ -1,6 +1,5 @@
 import { Pressable, StyleSheet } from "react-native";
 
-import EditScreenInfo from "@/components/EditScreenInfo";
 import { Text, View } from "@/components/Themed";
 
 async function fetchHello() {
@@ -10,10 +9,13 @@ async function fetchHello() {
 }
 
 export default function TabOneScreen() {
+  const apiUrl = process.env.EXPO_PUBLIC_API_URL;
+
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Tab One</Text>
       <Text>{process.env.TEST}</Text>
+      <Text>{apiUrl}</Text>
       <View
         style={styles.separator}
         lightColor="#eee"
