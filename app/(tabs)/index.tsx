@@ -3,9 +3,9 @@ import { Pressable, StyleSheet } from "react-native";
 import { Text, View } from "@/components/Themed";
 
 async function fetchHello() {
-  const response = await fetch("/api/hello");
+  const response = await fetch("/api/posts");
   const data = await response.json();
-  alert("Hello " + data.hello);
+  alert(JSON.stringify(data));
 }
 
 export default function TabOneScreen() {
